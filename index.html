@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for post in site.posts %}
-  <section>
+  <section class="{% cycle 'odd', 'even' %}">
     <div class="pull-{{ post.content_position }} photo-content">
       <h1>{{ post.title }}</h1>
       <p>{{ post.content }}</p>

@@ -16,7 +16,7 @@ body {
 
 h1 {
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 section {
@@ -25,11 +25,23 @@ section {
     position: relative;
 }
 
+section.even {
+    background: #111;
+}
+
 section img {
     position: absolute;
     bottom: 0;
     max-height: 100vh;
-    z-index: -1;
+    z-index: 1;
+}
+
+section img.pull-left {
+    left: 0;
+}
+
+section img.pull-right {
+    right: 0;
 }
 
 .pull-left {
@@ -41,6 +53,26 @@ section img {
 }
 
 .photo-content {
-    width: 50%;
-    padding: 0 25px;
+    width: 60%;
+    padding: 50px 75px;
+    position: relative;
+    z-index: 10;
+}
+
+.photo-content a {
+    color: #333;
+    background: #fff;
+    display: inline-block;
+    padding: 0.4em 0.7em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.photo-content a:hover {
+    background: #ccc;
+}
+
+.photo-content a:active {
+    background: #aaa;
 }
