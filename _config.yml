@@ -1,0 +1,11 @@
+# Site settings
+title: Adam Oliver Photography - 2014
+email: mail@adamoliver.net
+description: Photos taken by Adam Oliver in 2014
+baseurl: "/2014/" # the subpath of your site, e.g. /blog/
+url: "http://www.adamoliver.net" # the base hostname & protocol for your site
+twitter_username: adammoliver
+github_username:  adamoliver
+
+# Build settings
+markdown: kramdown

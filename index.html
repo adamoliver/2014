@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <section>
+    <div class="pull-{{ post.content_position }} photo-content">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.content }}</p>
+    </div>
+    <img src="/images/{{ post.image }}" alt="{{ post.title }}" class="pull-{{ post.image_position }}" />
+  </section>
+{% endfor %}
